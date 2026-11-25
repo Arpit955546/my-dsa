@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f8fc">
+    <title>DSA Space | Your practice, in one place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="sidebar">
+        <a class="brand" href="#home" aria-label="DSA Space home"><span class="brand-mark">&lt;/&gt;</span><span>DSA<span class="brand-light">space</span></span></a>
+        <p class="nav-caption">WORKSPACE</p>
+        <nav class="side-nav" aria-label="Main navigation">
+            <a class="side-link active" href="#dashboard"><span class="nav-icon">▦</span> Dashboard</a>
+            <a class="side-link" href="#today"><span class="nav-icon">◷</span> Today’s problem <span class="today-dot"></span></a>
+            <a class="side-link" href="#problems"><span class="nav-icon">☷</span> A2Z Sheet</a>
+            <a class="side-link" href="#analysis"><span class="nav-icon">▥</span> Analysis</a>
+        </nav>
+        <div class="sidebar-bottom">
+            <div class="sidebar-tip"><span class="tip-spark">✦</span><strong>Small steps add up.</strong><p>A little practice today goes a long way.</p></div>
+            <a class="side-profile" href="#profile"><span class="avatar avatar-small">A</span><span><strong>Arpit Kumar</strong><small>Your profile</small></span><span class="side-arrow">↗</span></a>
+        </div>
+    </header>
+
+    <main id="home" class="main-area">
+        <header class="topbar">
+            <div class="mobile-brand"><span class="brand-mark">&lt;/&gt;</span> DSA space</div>
+            <div class="breadcrumb">Your workspace <span>/</span> <strong id="current-page">Dashboard</strong></div>
+            <a class="top-profile" href="#profile"><span class="avatar">A</span><span><strong>Arpit Kumar</strong><small>DSA Candidate</small></span><span class="chevron">⌄</span></a>
+        </header>
+
+        <section id="dashboard" class="page-wrap">
+            <div class="welcome-banner">
+                <div class="welcome-copy"><span class="eyebrow"><i></i> YOUR DSA JOURNEY</span><h1>Welcome back, Arpit<span class="wave">✦</span></h1><p>Every problem you solve is progress. Let’s make today count.</p><a class="welcome-cta" href="#today">Start today’s practice <span>→</span></a></div>
+                <div class="welcome-art" aria-hidden="true"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-glow"></div><div class="code-card"><span class="code-dots"><i></i><i></i><i></i></span><span class="code-line purple">function <b>solve</b>(problem) {</span><span class="code-line indent"><i>const</i> plan = <b>practice</b>();</span><span class="code-line indent green">return progress;</span><span class="code-line">}</span><span class="cursor"></span></div><div class="floating-check">✓</div></div>
+                <div class="banner-decoration">✳</div>
+            </div>
+
+            <div class="pace-card"><div class="pace-topline"><span class="eyebrow plain">YOUR DSA SCHEDULE</span><span id="pace-start-date" class="pace-date">Started 15 Nov 2026</span></div><div class="pace-main"><span id="pace-state-icon" class="pace-state-icon">◷</span><div class="pace-copy"><strong id="pace-message">Loading your schedule...</strong><p id="pace-detail">Day 1 starts on 15 November 2026 · Daily target: 3 questions</p></div><span id="pace-badge" class="pace-badge">3 per day</span></div><div class="pace-bottom"><span id="pace-progress-copy">0 solved so far</span><span id="pace-day-label">Day 1</span></div><div class="pace-track"><i id="pace-progress-fill"></i></div></div>
+
+            <div class="section-title-row"><div><span class="eyebrow plain">YOUR OVERVIEW</span><h2>One step at a time</h2></div><span class="date-chip"><span>◷</span> Your DSA workspace</span></div>
+
+            <div class="feature-grid">
+                <a class="feature-card today-card" href="#today"><div class="feature-top"><span class="feature-icon icon-yellow">✦</span><span class="feature-arrow">↗</span></div><span id="dashboard-next-kicker" class="feature-kicker">NEXT QUESTION UP</span><h3 id="dashboard-next-title">Loading next problem...</h3><p id="dashboard-next-platform">Your next unsolved question will appear here.</p><span class="feature-link">Open today’s problem <b>→</b></span><span class="card-decoration sun">☼</span></a>
+                <a class="feature-card problems-card" href="#problems"><div class="feature-top"><span class="feature-icon icon-blue">▤</span><span class="feature-arrow">↗</span></div><span class="feature-kicker">QUESTION ROADMAP</span><h3>A2Z DSA Sheet</h3><p>Follow the structured roadmap and track your progress.</p><span class="feature-link">Explore the sheet <b>→</b></span><span class="card-decoration grid-decoration">⠿</span></a>
+                <a class="feature-card analysis-card" href="#analysis"><div class="feature-top"><span class="feature-icon icon-green">⌁</span><span class="feature-arrow">↗</span></div><span class="feature-kicker">YOUR PROGRESS</span><h3>Analysis</h3><p>See your practice history and growth over time.</p><span class="feature-link">View your analysis <b>→</b></span><span class="card-decoration chart-decoration">▂▅▃▇</span></a>
+                <a class="feature-card profile-card" href="#profile"><div class="feature-top"><span class="feature-icon icon-purple">◎</span><span class="feature-arrow">↗</span></div><span class="feature-kicker">YOUR SPACE</span><h3>My profile</h3><p>Your coding identity, all in one place.</p><span class="feature-link">Open your profile <b>→</b></span><span class="card-decoration profile-decoration">A</span></a>
+            </div>
+
+            <section id="today" class="below-section"><div class="section-title-row"><div><span class="eyebrow plain">KEEP YOUR MOMENTUM</span><h2>Today’s problem</h2></div><span class="status-pill"><i></i> Ready to start</span></div><div id="today-problem-card" class="today-problem-card"><span class="empty-icon">✦</span><div><h3>Loading your daily problem...</h3><p>Your day-wise question list will appear here.</p></div></div></section>
+
+            <section id="problems" class="below-section sheet-section">
+                <div class="sheet-heading"><div><span class="eyebrow plain">YOUR COMPLETE DSA ROADMAP</span><h2>DSA Practice Sheet</h2><p>Follow your saved questions day by day or explore them by topic.</p></div><div class="sheet-total"><strong id="sheet-solved-count">0</strong><span>of <b id="sheet-total-count">0</b> completed</span></div></div>
+                <div class="sheet-progress"><div><span id="sheet-progress-label">0% complete</span><span id="sheet-remaining-label">Keep going</span></div><div class="sheet-track"><i id="sheet-progress-fill"></i></div></div>
+                <div class="sheet-view-row"><div class="sheet-view-toggle" role="tablist" aria-label="Choose question view"><button type="button" class="view-tab active" data-view="day" role="tab" aria-selected="true">Day-wise</button><button type="button" class="view-tab" data-view="topic" role="tab" aria-selected="false">Topic-wise</button></div><span class="sheet-view-note">Your progress saves automatically on this device.</span></div>
+                <div class="sheet-layout"><aside class="module-sidebar"><div class="module-sidebar-title"><span>ROADMAP</span><span id="module-count">Topics</span></div><nav id="module-list" class="module-list" aria-label="DSA topics"></nav></aside><div class="sheet-main"><div class="sheet-tools"><label class="sheet-search"><span>⌕</span><input id="problem-search" type="search" placeholder="Search questions or topics..."></label><select id="difficulty-filter" aria-label="Filter by difficulty"><option value="all">All difficulties</option><option value="Easy">Easy</option><option value="Medium">Medium</option><option value="Hard">Hard</option></select></div><div id="topic-content" class="topic-content"></div></div></div>
+            </section>
+
+            <section id="analysis" class="below-section analysis-section">
+    <div class="section-title-row"><div><span class="eyebrow plain">YOUR PRACTICE DATA</span><h2>Analysis</h2></div><span class="date-chip">Based on your checked questions</span></div>
+    <div class="analysis-stat-grid">
+        <article class="analysis-stat"><span class="analysis-stat-icon green-stat">✓</span><small>QUESTIONS SOLVED</small><strong id="analysis-solved">0</strong><span>Across your full sheet</span></article>
+        <article class="analysis-stat"><span class="analysis-stat-icon purple-stat">▧</span><small>SHEET COMPLETION</small><strong id="analysis-completion">0%</strong><span id="analysis-completion-caption">0 of 0 questions</span></article>
+        <article class="analysis-stat"><span class="analysis-stat-icon orange-stat">◷</span><small>CURRENT STREAK</small><strong id="analysis-streak">0 days</strong><span id="analysis-streak-caption">Keep your momentum going</span></article>
+        <article class="analysis-stat"><span class="analysis-stat-icon blue-stat">▦</span><small>ACTIVE DAYS</small><strong id="analysis-active-days">0</strong><span>Days with solved questions</span></article>
+    </div>
+    <div class="content-panel heatmap-panel"><div class="panel-heading"><div><h3>Study calendar</h3><p>Question completions by scheduled day, starting 15 November 2026.</p></div><span class="heatmap-key"><i class="level-0"></i> Less <i class="level-1"></i><i class="level-2"></i><i class="level-3"></i> More</span></div><div id="analysis-heatmap" class="analysis-heatmap"></div><div id="heatmap-month-labels" class="heatmap-month-labels"></div></div>
+    <div class="analysis-two-column"><div class="content-panel"><div class="panel-heading"><div><h3>Topic progress</h3><p>Solved questions grouped by topic.</p></div></div><div id="analysis-topics" class="analysis-bars"></div></div><div class="content-panel"><div class="panel-heading"><div><h3>Difficulty performance</h3><p>Based on difficulty labels in your question list.</p></div></div><div id="analysis-difficulty" class="difficulty-summary"></div></div></div>
+    <div class="content-panel"><div class="panel-heading"><div><h3>Weekly activity</h3><p>Questions completed in each week of your roadmap.</p></div></div><div id="analysis-weeks" class="analysis-weeks"></div></div>
+</section>
+
+            <section id="profile" class="below-section profile-section">
+    <div class="section-title-row"><div><span class="eyebrow plain">YOUR DSA IDENTITY</span><h2>My profile</h2></div><span class="date-chip">Saved on this device</span></div>
+    <div class="profile-panel profile-panel-full">
+        <div class="profile-hero"><span class="avatar avatar-large profile-initial">A</span><div><h3 id="profile-display-name">Arpit Kumar</h3><p id="profile-display-role">DSA Candidate · Building consistency, one problem at a time.</p></div><span class="profile-tag">Personal profile</span></div>
+        <form id="profile-form" class="profile-form">
+            <div class="profile-form-heading"><h3>Profile details</h3><p>Update your details and coding profile handles.</p></div>
+            <div class="profile-fields"><label>Display name<input id="profile-name" name="name" type="text" maxlength="40" required placeholder="Your name"></label><label>Current role<select id="profile-role" name="role"><option>DSA Candidate</option><option>College Student</option><option>Software Developer</option><option>Job Seeker</option><option>Other</option></select></label><label>Preferred language<select id="profile-language" name="language"><option>C++</option><option>Java</option><option>Python</option><option>JavaScript</option><option>C</option></select></label></div>
+            <div class="profile-form-heading platform-heading-profile"><h3>Coding profiles</h3><p>Add handles to keep your profile links handy.</p></div>
+            <div class="profile-fields profile-handles"><label>LeetCode username<input id="profile-leetcode" name="leetcode" type="text" placeholder="Username"></label><label>Codeforces handle<input id="profile-codeforces" name="codeforces" type="text" placeholder="Handle"></label><label>GeeksforGeeks username<input id="profile-gfg" name="gfg" type="text" placeholder="Username"></label><label>HackerRank username<input id="profile-hackerrank" name="hackerrank" type="text" placeholder="Username"></label></div>
+            <div class="profile-form-footer"><span id="profile-save-message" role="status">Changes stay in this browser.</span><button class="button-primary" type="submit">Save profile <span>✓</span></button></div>
+        </form>
+        <div class="profile-links-panel"><h3>Your coding profiles</h3><div id="profile-links" class="profile-link-list"><p>Add a username above to show your profile links here.</p></div></div>
+    </div>
+</section>
+            <footer class="page-footer"><span>Made for your next breakthrough.</span><span>Keep showing up <b>✦</b></span></footer>
+        </section>
+    </main>
+    <script>
+        const pageNames = { dashboard: "Dashboard", today: "Today’s problem", problems: "A2Z Sheet", analysis: "Analysis", profile: "My profile" };
+        const pageLabel = document.getElementById("current-page");
+        const navItems = document.querySelectorAll(".side-link");
+        function updatePage() {
+            const activeId = location.hash.slice(1) || "dashboard";
+            pageLabel.textContent = pageNames[activeId] || "Dashboard";
+            navItems.forEach(item => item.classList.toggle("active", item.hash === `#${activeId}` || (activeId === "home" && item.hash === "#dashboard")));
+        }
+        window.addEventListener("hashchange", updatePage);
+        updatePage();
+    </script>
+    <input id="day-search" type="hidden"><button id="search-day-btn" type="button" hidden></button><div id="problem-list" hidden></div>
+    <script src="js/problems.js"></script>
+    <script src="js/sheet.js"></script>
+    <script src="js/insights.js"></script>
+</body>
+</html>
